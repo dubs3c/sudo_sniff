@@ -18,9 +18,10 @@ int main(int argc, char const *argv[])
 	char command[MAX] = {0};
 	/* Contains the victim's original command */
 	char orgiginal_cmd[MAX] = {0};
+	
 	size_t len = 0;
-    ssize_t read;
-    int i;
+	ssize_t read;
+	int i;
 
     /* Gather all the arguments supplied by the user and store them in a buffer */
     for (i = 1; i < argc; ++i)
