@@ -3,14 +3,15 @@ sudo_sniff is a simple program that attempts to steal the user's password while 
 
 ## Improvements
 * Hide the victim's input
-* Add function to either send the password to attacker or save it on disk
-* [BUG] If the victim enters an incorrect password, the text asking for the password will be printed multiple times.
+* ~~Add function to either send the password to attacker or save it on disk.~~
+* sudo may be in different locations on different systems, perhaps implement a function to locate it
+* ~~[BUG] When the victim enters his input, the text asking for the password will be printed multiple times.~~
 
 ## Usage
 1. git clone git@github.com:mjdubell/sudo_sniff.git
 2. cd sudo_sniff/
-3. gcc -Wall sudo_sniff.c -o sudo
-4. ./sudo
+3. make
+4. ./sudo whoami
 
 ## Contributing
 1. Fork it!
