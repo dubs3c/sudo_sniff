@@ -5,7 +5,6 @@
 #include <sys/types.h>
 #include <pwd.h>
 #include <termios.h>
-#include <stdio.h>
 
 #define BUFFER_SIZE  100
 #define MAX_PW_ATTEMPTS  3
